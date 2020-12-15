@@ -8,7 +8,7 @@ from pcdet.models.backbones_3d.sa_block import SA_block
 
 class PositionalEncoding(nn.Module):
     """
-    From https://github.com/wzlxjtu/PositionalEncoding2D
+    Positional encoding from https://github.com/wzlxjtu/PositionalEncoding2D
     """
     def __init__(self, d_model, height, width):
         super(PositionalEncoding, self).__init__()
