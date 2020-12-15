@@ -37,6 +37,8 @@ class PillarContext3D_dsa(nn.Module):
             pool_method=self.model_cfg.LOCAL_CONTEXT.POOL_METHOD,
             pc_range=self.point_cloud_range,
         )
+
+        # UnPool layers
         mlps_decode = self.model_cfg.DECODE.MLPS
         for k in range(len(mlps_decode)):
             mlps_decode[k] = [self.model_cfg.IN_DIM] + mlps_decode[k]
