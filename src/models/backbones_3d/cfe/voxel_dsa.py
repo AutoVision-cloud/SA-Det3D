@@ -17,10 +17,7 @@ class VoxelContext3D_dsa(nn.Module):
         self.model_cfg = model_cfg
         self.voxel_size = voxel_size
         self.point_cloud_range = point_cloud_range
-
-        # Self-attention layers
         self.self_attn1 = SA_block(inplanes=self.model_cfg.IN_DIM, planes=self.model_cfg.IN_DIM)
-        self.self_attn2 = SA_block(inplanes=self.model_cfg.IN_DIM, planes=self.model_cfg.IN_DIM)
 
         # Deform and aggregate local features
         mlps = self.model_cfg.LOCAL_CONTEXT.MLPS
@@ -35,6 +32,10 @@ class VoxelContext3D_dsa(nn.Module):
             pool_method=self.model_cfg.LOCAL_CONTEXT.POOL_METHOD,
             pc_range=self.point_cloud_range,
         )
+
+        # Self-attention layers
+        self.self_attn2 = SA_block(inplanes=self.model_cfg.IN_DIM, planes=self.model_cfg.IN_DIM)
+        self.self_attn3 = SA_block(inplanes=self.model_cfg.IN_DIM, planes=self.model_cfg.IN_DIM)
 
         # UnPool layers
         mlps_decode = self.model_cfg.DECODE.MLPS
@@ -110,11 +111,14 @@ class VoxelContext3D_dsa(nn.Module):
             init_idx = batch_idx * self.model_cfg.NUM_KEYPOINTS
             local_feat = local_features[init_idx:init_idx + self.model_cfg.NUM_KEYPOINTS, :].unsqueeze(0)
             local_feat = local_feat.permute(0, 2, 1).contiguous()
+            global_loc_feat  = self.self_attn1(local_feat)
+
             # SA-1
-            attn1 = self.self_attn1(local_feat)
+            attn_feat_1 = self.self_attn2(global_loc_feat)
             # SA-2
-            attn2 = self.self_attn2(attn1)
-            context_feat = attn2.permute(0, 2, 1).contiguous().squeeze(0)
+            attn_feat_2 = self.self_attn3(attn_feat_1)
+            context_feat = attn_feat_2.permute(0, 2, 1).contiguous().squeeze(0)
+
             batch_global_features.append(context_feat)
         batch_global_features = torch.cat(batch_global_features, 0)
         return batch_global_features
