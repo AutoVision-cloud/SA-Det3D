@@ -43,8 +43,9 @@ our proposed self-attention module.</p>
 
 <div align="center">
   <img src="docs/demo_params_flops.png" width="300px" />
-  <p>Fig.2. mAP with respect to params and FLOPs of baseline as well as our proposed 
-self-attention augmented variants.  For similar number of parameters 
-and FLOPs, self-attention systematically improves 3D object detection
-across state-of-the-art 3D detectors. </p>
+  <p>Fig.3. mAP with respect to params and FLOPs of baseline as well as our proposed 
+self-attention augmented variants. </p>
 </div>
+For similar number of parameters 
+and FLOPs, self-attention systematically improves 3D object detection
+across state-of-the-art 3D detectors.
