@@ -51,7 +51,7 @@ class PillarContext3D_dsa(nn.Module):
         )
 
         # self-attention layers to operate on deformed pillars
-        self.self_attn = SA_block(inplanes=self.model_cfg.IN_DIM, planes=self.model_cfg.IN_DIM)
+        self.self_full_fast_attn = SA_block(inplanes=self.model_cfg.IN_DIM, planes=self.model_cfg.IN_DIM)
         self.reduce_dim = nn.Sequential(nn.Conv1d(2*self.model_cfg.IN_DIM, self.model_cfg.IN_DIM, kernel_size=1),
                                         nn.BatchNorm1d(self.model_cfg.IN_DIM),
                                         nn.ReLU(inplace=True),
@@ -59,8 +59,8 @@ class PillarContext3D_dsa(nn.Module):
                                         nn.BatchNorm1d(self.model_cfg.IN_DIM),
                                         nn.ReLU(inplace=True)
                                         )
-        self.self_attn1 = SA_block(inplanes=2*self.model_cfg.IN_DIM, planes=2*self.model_cfg.IN_DIM)
-        self.self_attn2 = SA_block(inplanes=2*self.model_cfg.IN_DIM, planes=2*self.model_cfg.IN_DIM)
+        self.self_attn_ms1 = SA_block(inplanes=2*self.model_cfg.IN_DIM, planes=2*self.model_cfg.IN_DIM)
+        self.self_attn_ms2 = SA_block(inplanes=2*self.model_cfg.IN_DIM, planes=2*self.model_cfg.IN_DIM)
 
     def get_keypoints(self, batch_size, coords, src_points):
         """
@@ -118,16 +118,16 @@ class PillarContext3D_dsa(nn.Module):
             init_idx = batch_idx * self.model_cfg.NUM_KEYPOINTS
             local_feat = local_features[init_idx:init_idx + self.model_cfg.NUM_KEYPOINTS, :].unsqueeze(0)
             local_feat = local_feat.permute(0, 2, 1).contiguous()
-            global_feat = self.self_attn(local_feat)
+            global_feat = self.self_full_fast_attn(local_feat)
 
             # SA-1
             ms_feat1 = torch.cat([local_feat, global_feat], dim=1)
-            attn_feat1 = self.self_attn1(ms_feat1)
+            attn_feat1 = self.self_attn_ms1(ms_feat1)
             attn_feat1 = self.reduce_dim(attn_feat1)
 
             # SA-2
             ms_feat2 = torch.cat([local_feat, attn_feat1], dim=1)
-            attn_feat2 = self.self_attn2(ms_feat2)
+            attn_feat2 = self.self_attn_ms2(ms_feat2)
             attn_feat2 = self.reduce_dim(attn_feat2)
             context_feat = attn_feat2.permute(0, 2, 1).contiguous().squeeze(0)
 
