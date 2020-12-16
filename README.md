@@ -10,20 +10,11 @@ Self-Attention Based Context-Aware 3D Object Detection.
 ## Overview
 
 <div align="center">
-  <img src="docs/overview.png" width="450px" height="150px" />
+  <img src="docs/overview.png" width="900px" height="350px" />
   <p>Self-Attention augmented global-context aware backbone networks. </p>
 </div>
 
-Most existing point-cloud based 3D object detectors use 
-convolution-like operators to process information in a 
-local neighbourhood with fixed-weight kernels and aggregate 
-global context hierarchically. 
-However, recent work on non-local neural networks and 
-self-attention for 2D vision has shown that explicitly 
-modeling global context and long-range interactions 
-between positions can lead to more robust and competitive 
-models. 
-<br/> <br/> In this paper, we explore variations of 
+In this paper, we explore variations of 
 self-attention for contextual modeling in 3D object 
 detection by augmenting convolutional features with 
 self-attention features. 
@@ -39,6 +30,4 @@ learning deformations over randomly sampled locations.
 This not only allows us to scale explicit global contextual 
 modeling to larger point-clouds, 
 but also leads to more discriminative and informative feature 
-descriptors.  
-<br/> Our method can be flexibly applied to most state-of-the-art detectors with increased accuracy and parameter and compute efficiency. We achieve new state-of-the-art detection performance on KITTI and nuScenes datasets.
-
+descriptors.
