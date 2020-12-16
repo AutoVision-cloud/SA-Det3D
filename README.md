@@ -10,7 +10,7 @@ Self-Attention Based Context-Aware 3D Object Detection.
 ## Overview
 
 <div align="center">
-  <img src="docs/overview.png" width="700px" height="250px" />
+  <img src="docs/overview.png" width="650px" height="250px" />
   <p>Self-Attention augmented global-context aware backbone networks. </p>
 </div>
 
