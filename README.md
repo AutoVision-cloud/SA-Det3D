@@ -42,7 +42,7 @@ our proposed self-attention module.</p>
 </div>
 
 <div align="center">
-  <img src="docs/demo_params_flops.png" width="500px" />
+  <img src="docs/demo_params_flops.png" width="300px" />
   <p>mAP with respect to params and FLOPs of baseline as well as our proposed 
 self-attention augmented variants.  For similar number of parameters 
 and FLOPs, self-attention systematically improves 3D object detection
