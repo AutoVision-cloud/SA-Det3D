@@ -11,7 +11,7 @@ Self-Attention Based Context-Aware 3D Object Detection.
 
 <div align="center">
   <img src="docs/overview.png" width="600px" height="280px" />
-  <p>Self-Attention augmented global-context aware backbone networks. </p>
+  <p>Fig.1. Self-Attention augmented global-context aware backbone networks. </p>
 </div>
 
 In this paper, we explore variations of 
@@ -37,13 +37,13 @@ descriptors.
 
 <div align="center">
   <img src="docs/demo_qual.png" width="700px" />
-  <p>Visualizing qualitative results between baseline and
+  <p>Fig.2. Visualizing qualitative results between baseline and
 our proposed self-attention module.</p>
 </div>
 
 <div align="center">
   <img src="docs/demo_params_flops.png" width="300px" />
-  <p>mAP with respect to params and FLOPs of baseline as well as our proposed 
+  <p>Fig.2. mAP with respect to params and FLOPs of baseline as well as our proposed 
 self-attention augmented variants.  For similar number of parameters 
 and FLOPs, self-attention systematically improves 3D object detection
 across state-of-the-art 3D detectors. </p>
