@@ -31,3 +31,12 @@ This not only allows us to scale explicit global contextual
 modeling to larger point-clouds, 
 but also leads to more discriminative and informative feature 
 descriptors.
+
+
+## Results
+
+<div align="center">
+  <img src="docs/demo_qual.png" width="700px" />
+  <p>Visualizing qualitative results between baseline and
+our proposed self-attention module.</p>
+</div>
