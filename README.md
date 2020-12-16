@@ -40,3 +40,11 @@ descriptors.
   <p>Visualizing qualitative results between baseline and
 our proposed self-attention module.</p>
 </div>
+
+<div align="center">
+  <img src="docs/demo_params_flops.png" width="500px" />
+  <p>mAP with respect to params and FLOPs of baseline as well as our proposed 
+self-attention augmented variants.  For similar number of parameters 
+and FLOPs, self-attention systematically improves 3D object detection
+across state-of-the-art 3D detectors. </p>
+</div>
