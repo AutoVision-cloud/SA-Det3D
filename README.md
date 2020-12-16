@@ -36,13 +36,13 @@ descriptors.
 ## Results
 
 <div align="center">
-  <img src="docs/demo_qual.png" width="700px" />
+  <img src="docs/demo_qual.png" width="600px" />
   <p>Fig.2. Visualizing qualitative results between baseline and
 our proposed self-attention module.</p>
 </div>
 
 <div align="center">
   <img src="docs/demo_params_flops.png" width="300px" />
-  <p>Fig.3. mAP with respect to params and FLOPs of baseline and proposed 
+  <p>Fig.3. 3D Car AP with respect to params and FLOPs of baseline and proposed 
 self-attention variants. </p>
 </div>
