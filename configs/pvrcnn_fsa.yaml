@@ -49,7 +49,7 @@ MODEL:
       NUM_FILTERS: [ 128, 128 ]
 
     CFE:
-      NAME: VoxelContext3D
+      NAME: VoxelContext3D_fsa
       downsampled: 8
       IN_DIM: 64
       NUM_BEV_FEATURES: 64
