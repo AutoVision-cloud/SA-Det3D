@@ -63,3 +63,26 @@ Our method identifies missed detections and removes false positives.
 our proposed self-attention module.</p>
 </div>
 
+## Usage
+a. Clone the repo:
+```
+git clone --recursive https://github.com/AutoVision-cloud/SA-Det3D
+```
+b. Copy SA-Det3D src into OpenPCDet: 
+```
+sh ./init.sh
+```
+
+c. Install OpenPCDet and prepare KITTI data:
+
+Please refer to [INSTALL.md](docs/INSTALL.md) for installation and dataset preparation.
+
+d. Run experiments with a specific configuration file:
+
+Please refer to [GETTING_STARTED.md](docs/GETTING_STARTED.md) to learn more about how to train and run inference on this detector.
+
+## Acknowledgement
+* [second.pytorch](https://github.com/traveller59/second.pytorch)
+* [PointRCNN](https://github.com/sshaoshuai/PointRCNN)
+* [PV-RCNN](https://github.com/open-mmlab/OpenPCDet)
+* [MLCVNet](https://github.com/NUAAXQ/MLCVNet)
