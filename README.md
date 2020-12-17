@@ -19,10 +19,10 @@ self-attention for contextual modeling in 3D object
 detection by augmenting convolutional features with 
 self-attention features. 
 <br/>
-We first incorporate the pairwise mechanism into the  current state-of-the-art 
-BEV, voxel, point and point-voxel based detectors and show consistent 
-improvement over strong baseline models while simultaneously significantly 
-reducing their parameter footprint and computational cost. 
+We first incorporate the pairwise self-attention mechanism into the  current 
+state-of-the-art BEV, voxel, point and point-voxel based detectors and show 
+consistent improvement over strong baseline models while simultaneously 
+significantly reducing their parameter footprint and computational cost. 
 We call this variant *full self-attention* (*FSA*).
 <br/>
 We also propose a self-attention variant that 
