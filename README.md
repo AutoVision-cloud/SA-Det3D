@@ -84,7 +84,7 @@ Car moderate category are shown in the table below.
 | [SECOND_DSA](configs/second_dsa.yaml) | **82.03** | 2.2 | 52.6 | [SECOND-DSA](https://drive.google.com/file/d/1lbgI5ZOB8WhMiTgK0vTw26pw_BdZ9J87/view?usp=sharing) |
 | [SECOND_FSA](configs/second_fsa.yaml) | 81.86 | 2.2 | 51.9 | [SECOND-FSA](https://drive.google.com/file/d/1hyIBqFdql_FtEgavq6rEzUbIbPztQT7r/view?usp=sharing) |
 | [Point-RCNN_baseline](https://github.com/open-mmlab/OpenPCDet/blob/master/tools/cfgs/kitti_models/pointrcnn_iou.yaml) | 80.52 | 4.0 | 27.4 | [Point-RCNN](https://drive.google.com/file/d/1Hab5lfwmqnRf928jIMJur5xt4PzspoOY/view?usp=sharing) |
-| [Point-RCNN_red](configs/pointrcnn_red.yaml) | 80.47 | 2.2 | 24 | [Point-RCNN-red](https://drive.google.com/file/d/1jD-TzJwKYfEYzSVTmErU9AzO9d0uiCos/view?usp=sharing) |
+| [Point-RCNN_red](configs/pointrcnn_red.yaml) | 80.40 | 2.2 | 24 | [Point-RCNN-red](https://drive.google.com/file/d/1jD-TzJwKYfEYzSVTmErU9AzO9d0uiCos/view?usp=sharing) |
 | [Point-RCNN_DSA](configs/pointrcnn_dsa.yaml) | 81.80 | 2.3 | 19.3 | [Point-RCNN-DSA](https://drive.google.com/file/d/1buJs9bNwl0YzP7uLlEjdfkHcqbvVMKAN/view?usp=sharing) |
 | [Point-RCNN_FSA](configs/pointrcnn_fsa.yaml) | **82.10** | 2.5 | 19.8 | [Point-RCNN-FSA](https://drive.google.com/file/d/1i_My1kHZNt6n5QAgO-AoiNRxjOwEG4R0/view?usp=sharing) |
 | [PV-RCNN_baseline](https://github.com/open-mmlab/OpenPCDet/blob/master/tools/cfgs/kitti_models/pv_rcnn.yaml) | 84.83 | 12 | 89 | [PV-RCNN](https://drive.google.com/file/d/11twTR4wN0ZmEQE2Bh6Cb2gO7qc9z1b8p/view?usp=sharing) |
