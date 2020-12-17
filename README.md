@@ -34,7 +34,7 @@ descriptors.
 
 
 ## Results
-Self-attention (SA) systematically 
+- Self-attention (SA) systematically 
 improves 3D object detection across  state-of-the-art  3D  detectors: PointPillars, SECOND and 
 Point-RCNN. In this figure, we show 3D AP on moderate Car class of KITTI val split (R40) vs. the 
 number of parameters (Top) and 
@@ -47,7 +47,7 @@ self-attention variants. </p>
 </div>
 <br/>
 
-We also show qualitative performance on KITTI val split. Red bounding box 
+- We also show qualitative performance on KITTI val split. Red bounding box 
 represents ground truth and green represents detector outputs. 
 From left to right: (a) RGB image of challenging scenes. 
 (b) Result of the state-of-the-art methods: PointPillars, 
