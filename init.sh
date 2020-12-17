@@ -16,3 +16,6 @@ cp -r src/tools/* OpenPCDet/tools/
 
 cp -r configs/* OpenPCDet/tools/cfgs/kitti_models/
 
+cp -r requirements.txt OpenPCDet/
+
+
