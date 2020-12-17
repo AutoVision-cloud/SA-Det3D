@@ -34,9 +34,9 @@ descriptors.
 
 
 ## Results
-For similar number of parameters and FLOPs, self-attention (SA) systematically 
+Self-attention (SA) systematically 
 improves 3D object detection across  state-of-the-art  3D  detectors (PointPillars, SECOND and 
-Point-RCNN). AP on moderate Car class of KITTI val split (R40) vs. the 
+Point-RCNN). In this figure, we show 3D AP on moderate Car class of KITTI val split (R40) vs. the 
 number of parameters (Top) and 
 GFLOPs (Bottom) for baseline models and proposed baseline extensions with 
 Deformable and Full SA.
