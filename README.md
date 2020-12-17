@@ -34,12 +34,29 @@ descriptors.
 
 
 ## Results
-
+For similar number of parameters and FLOPs, self-attention (SA) systematically 
+improves 3D object detection across  state-of-the-art  3D  detectors (PointPillars, SECOND and 
+Point-RCNN). AP on moderate Car class of KITTI val split (R40) vs. the 
+number of parameters (Top) and 
+GFLOPs (Bottom) for baseline models and proposed baseline extensions with 
+Deformable and Full SA.
 <div align="center">
   <img src="docs/demo_params_flops.png" width="300px" />
   <p>Fig.2. 3D Car AP with respect to params and FLOPs of baseline and proposed 
 self-attention variants. </p>
 </div>
+<br/>
+
+Performance illustrations on KITTI val split. Red bounding box 
+represents ground truth; green represents detector outputs. 
+From left to right: (a) RGB image of challenging scenes. 
+(b) Result of the state-of-the-art methods: PointPillars, 
+SECOND, Point-RCNN, PV-RCNN. (c) Result of our full self-attention (FSA) 
+augmented baselines, which uses significantly fewer 
+parameters and FLOPs. 
+FSA attends to the entire point-cloud to produce global 
+context-aware feature representations. 
+Our method identifies missed detections and removes false positives.
 <div align="center">
   <img src="docs/demo_qual.png" width="600px" />
   <p>Fig.3. Visualizing qualitative results between baseline and
