@@ -71,7 +71,7 @@ Car moderate category are shown in the table below.
 
 **Notes:**
 - For inference, our models have been tested with 1 Tesla V-100 GPU and Pytorch 1.3.
-- We use the checkpoints released by OpenPCDet as our baseline for evaluation.
+- We use the checkpoints released by [OpenPCDet](https://github.com/open-mmlab/OpenPCDet) as our baseline for evaluation.
 - Our models are trained with 4 Tesla V-100 GPUs and Pytorch 1.3.
 <br/>
 
