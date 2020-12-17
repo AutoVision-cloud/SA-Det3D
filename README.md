@@ -42,7 +42,7 @@ number of parameters (Top) and
 GFLOPs (Bottom) for baseline models and proposed baseline extensions with 
 Deformable SA (DSA) and Full SA (FSA).
 <div align="center">
-  <img src="docs/demo_params_flops.png" width="300px" />
+  <img src="docs/demo_params_flops.pdf" width="300px" />
   <p>Fig.2. 3D Car AP with respect to params and FLOPs of baseline and proposed 
 self-attention variants. </p>
 </div>
