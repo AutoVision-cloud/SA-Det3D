@@ -47,8 +47,8 @@ self-attention variants. </p>
 </div>
 <br/>
 
-Performance illustrations on KITTI val split. Red bounding box 
-represents ground truth; green represents detector outputs. 
+We also show qualitative performance on KITTI val split. Red bounding box 
+represents ground truth and green represents detector outputs. 
 From left to right: (a) RGB image of challenging scenes. 
 (b) Result of the state-of-the-art methods: PointPillars, 
 SECOND, Point-RCNN, PV-RCNN. (c) Result of our full self-attention (FSA) 
