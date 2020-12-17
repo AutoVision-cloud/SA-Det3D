@@ -19,21 +19,19 @@ self-attention for contextual modeling in 3D object
 detection by augmenting convolutional features with 
 self-attention features. 
 <br/>
-We first incorporate the *pairwise / full self-attention* (*FSA*) 
-mechanism into the current state-of-the-art BEV, voxel, 
-point and point-voxel based detectors and show consistent 
-improvement over strong baseline models 
-while simultaneously significantly reducing 
-their parameter footprint and computational cost. 
+We first incorporate the pairwise mechanism into the  current state-of-the-art 
+BEV, voxel, point and point-voxel based detectors and show consistent 
+improvement over strong baseline models while simultaneously significantly 
+reducing their parameter footprint and computational cost. 
+We call this variant *full self-attention* (*FSA*).
 <br/>
 We also propose a self-attention variant that 
 samples a subset of the most representative features by 
-learning deformations over randomly sampled locations. 
-We call this variant *deformable self-attention* (*DSA*).
+learning deformations over randomly sampled locations.
 This not only allows us to scale explicit global contextual 
 modeling to larger point-clouds, 
 but also leads to more discriminative and informative feature 
-descriptors.
+descriptors. We call this variant *deformable self-attention* (*DSA*).
 
 
 ## Results
