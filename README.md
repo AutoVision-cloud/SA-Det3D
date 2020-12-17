@@ -66,7 +66,7 @@ our proposed self-attention module.</p>
 ## Model Zoo
 We provide our proposed detection models in this section. The 3D 
 AP results (R-40) on KITTI 3D Object Detection validation of the 
-moderate category are shown in the table below.
+Car moderate category are shown in the table below.
 
 **Notes:**
 - For inference, our models have been tested with 1 Tesla V-100 GPU and Pytorch 1.3.
@@ -74,7 +74,7 @@ moderate category are shown in the table below.
 - Our models are trained with 4 Tesla V-100 GPUs and Pytorch 1.3.
 <br/>
 
-|                                                     | Car AP | Params (M) | G-FLOPs | download | 
+|                                                     | Car 3D AP | Params (M) | G-FLOPs | download | 
 |-----------------------------------------------------|:-------:|:-------:|:-------:|:---------:|
 | [PointPillar_baseline](https://github.com/open-mmlab/OpenPCDet/blob/master/tools/cfgs/kitti_models/pointpillar.yaml) | 78.39 | 4.8 | 63.4 | [PointPillar](https://drive.google.com/file/d/1tXU14qouG6EWo5QkjwP9KK22NSyWq1Bf/view?usp=sharing) |
 | [PointPillar_red](configs/pointpillar_red.yaml) | 78.07 | 1.5 | 31.5 | [PointPillar-red](https://drive.google.com/file/d/1xQFhCEuiAWr8oLxL-xGYSqqCKVcrx9au/view?usp=sharing) |
