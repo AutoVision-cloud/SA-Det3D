@@ -35,8 +35,8 @@ descriptors.
 
 ## Results
 Self-attention (SA) systematically 
-improves 3D object detection across  state-of-the-art  3D  detectors (PointPillars, SECOND and 
-Point-RCNN). In this figure, we show 3D AP on moderate Car class of KITTI val split (R40) vs. the 
+improves 3D object detection across  state-of-the-art  3D  detectors: PointPillars, SECOND and 
+Point-RCNN. In this figure, we show 3D AP on moderate Car class of KITTI val split (R40) vs. the 
 number of parameters (Top) and 
 GFLOPs (Bottom) for baseline models and proposed baseline extensions with 
 Deformable and Full SA.
@@ -51,7 +51,7 @@ We also show qualitative performance on KITTI val split. Red bounding box
 represents ground truth and green represents detector outputs. 
 From left to right: (a) RGB image of challenging scenes. 
 (b) Result of the state-of-the-art methods: PointPillars, 
-SECOND, Point-RCNN, PV-RCNN. (c) Result of our full self-attention (FSA) 
+SECOND, Point-RCNN and PV-RCNN. (c) Result of our full self-attention (FSA) 
 augmented baselines, which uses significantly fewer 
 parameters and FLOPs. 
 <br/> FSA attends to the entire point-cloud to produce global 
@@ -70,6 +70,7 @@ moderate category are shown in the table below.
 
 **Notes:**
 - For inference, our models have been tested with 1 Tesla V-100 GPU and Pytorch 1.3.
+- We use the checkpoints released by OpenPCDet as our baseline for evaluation.
 - Our models are trained with 4 Tesla V-100 GPUs and Pytorch 1.3.
 <br/>
 
