@@ -63,7 +63,7 @@ Our method identifies missed detections and removes false positives.
 our proposed self-attention module.</p>
 </div>
 
-## Model-zoo
+## Model Zoo
 We provide our proposed detection models in this section. The 3D 
 AP results (R-40) on KITTI 3D Object Detection validation of the 
 moderate category are shown in the table below.
