@@ -54,7 +54,7 @@ From left to right: (a) RGB image of challenging scenes.
 SECOND, Point-RCNN, PV-RCNN. (c) Result of our full self-attention (FSA) 
 augmented baselines, which uses significantly fewer 
 parameters and FLOPs. 
-FSA attends to the entire point-cloud to produce global 
+<br/> FSA attends to the entire point-cloud to produce global 
 context-aware feature representations. 
 Our method identifies missed detections and removes false positives.
 <div align="center">
