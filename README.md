@@ -39,7 +39,7 @@ improves 3D object detection across  state-of-the-art  3D  detectors: PointPilla
 Point-RCNN. In this figure, we show 3D AP on moderate Car class of KITTI val split (R40) vs. the 
 number of parameters (Top) and 
 GFLOPs (Bottom) for baseline models and proposed baseline extensions with 
-Deformable and Full SA.
+Deformable SA (DSA) and Full SA (FSA).
 <div align="center">
   <img src="docs/demo_params_flops.png" width="300px" />
   <p>Fig.2. 3D Car AP with respect to params and FLOPs of baseline and proposed 
