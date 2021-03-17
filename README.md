@@ -3,7 +3,7 @@
 By [Prarthana Bhattacharyya](https://scholar.google.com/citations?user=v6pGkNQAAAAJ&hl=en), [Chengjie Huang](https://scholar.google.com/citations?user=O6gvGZgAAAAJ&hl=en) and [Krzysztof Czarnecki](https://scholar.google.com/citations?hl=en&user=ZzCpumQAAAAJ).
 
 We provide code support and configuration files to reproduce the results in the paper:
-Self-Attention Based Context-Aware 3D Object Detection. 
+["SA-Det3D: Self-Attention Based Context-Aware 3D Object Detection"](https://arxiv.org/abs/2101.02672). 
 <br/> Our code is based on [OpenPCDet](https://github.com/open-mmlab/OpenPCDet), which is a clean open-sourced project for benchmarking 3D object detection methods. 
 
 
@@ -109,6 +109,22 @@ Please refer to [INSTALL.md](docs/INSTALL.md) for installation and dataset prepa
 d. Run experiments with a specific configuration file:
 
 Please refer to [GETTING_STARTED.md](docs/GETTING_STARTED.md) to learn more about how to train and run inference on this detector.
+
+
+
+## Citation
+If you find this project useful in your research, please consider citing:
+```
+@misc{bhattacharyya2021sadet3d,
+      title={SA-Det3D: Self-Attention Based Context-Aware 3D Object Detection}, 
+      author={Prarthana Bhattacharyya and Chengjie Huang and Krzysztof Czarnecki},
+      year={2021},
+      eprint={2101.02672},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
+
 
 ## Acknowledgement
 * [second.pytorch](https://github.com/traveller59/second.pytorch)
